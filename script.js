@@ -9,11 +9,9 @@ let prof = [
 
 let strProf='';
 function selectProf(){
-    // strProf=e.options[e.selectedIndex].text;
     strProf=e.options[e.selectedIndex].value;;
     console.log(strProf);
 }
-// prof = prof.map(item => ({...item,age:parseInt(item.age,10)}))
 prof = prof.map(function(item,index){
     return ({
         id:item.id,
@@ -24,7 +22,6 @@ prof = prof.map(function(item,index){
 })
 
 prof.forEach(item => {
-    // result.push({...item,age:item.name =='john' ? 19 : item.age})
     if(item.name =='john'){
         item.age=19;
     }

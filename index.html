@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Filter UI cards via their Profession</h1>
+    <div class="dropdown">
+        <select class="select" onchange="selectProf()" id="prof">
+            <option value="">Select Profession</option>
+            <option value="developer">Developer</option>
+            <option value="admin">Admin</option>
+        </select>
+    </div>
+    <div id="employee">
+
+    </div>
+    <button class="btn" onclick="filter()">Filter</button>
+    <script src="script.js"></script>
+    
+</body>
+</html>
